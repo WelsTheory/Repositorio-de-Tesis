@@ -1,5 +1,5 @@
 # Repositorio-de-Tesis
-DiseÃ±o e implementaciÃ³n de un sistema de adquisiciÃ³n digital programable para seÃ±al ECG. Autor:William's Limonchi Sandoval
+Diseño e implementación de un sistema de adquisición digital programable para señal ECG. Autor:William's Limonchi Sandoval
 
 ## Primeros pasos
 
