@@ -1,0 +1,11 @@
+https://octave.org/doc/v4.2.2/Installing-and-Removing-Packages.html
+
+
+
+
+>> help downsample
+error: help: the 'downsample' function belongs to the signal package from Octave
+Forge which you have installed but not loaded.  To load the package, run
+'pkg load signal' from the Octave prompt.
+
+pkg load signal

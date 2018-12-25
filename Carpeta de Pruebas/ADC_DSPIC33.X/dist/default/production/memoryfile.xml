@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <executable name="ADC_DSPIC33.elf">
+    <memory name="data">
+      <units>bytes</units>
+      <length>16384</length>
+      <used>580</used>
+      <free>15804</free>
+    </memory>
+    <memory name="program">
+      <units>bytes</units>
+      <length>131328</length>
+      <used>4677</used>
+      <free>126651</free>
+    </memory>
+  </executable>
+</project>

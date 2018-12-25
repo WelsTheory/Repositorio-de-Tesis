@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+                   <itemPath>hola_dspic.h</itemPath>
+<itemPath>hola_dspic_private.h</itemPath>
+<itemPath>hola_dspic_types.h</itemPath>
+<itemPath>rtGetInf.h</itemPath>
+<itemPath>rtGetNaN.h</itemPath>
+<itemPath>rt_nonfinite.h</itemPath>
+
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="Library Files"
+                   projectFiles="true">
+                   
+    </logicalFolder>
+    <logicalFolder name="LinkerFiles"
+                   displayName="Linker Files"
+                   projectFiles="true">
+                   
+    </logicalFolder>
+    <logicalFolder name="ObjectFiles"
+                   displayName="Object Files"
+                   projectFiles="true">
+                   
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+                   <itemPath>hola_dspic.c</itemPath>
+<itemPath>MCHP_ADC1_Interrupt.c</itemPath>
+<itemPath>MCHP_UART1_Interrupt.c</itemPath>
+<itemPath>hola_dspic_data.c</itemPath>
+<itemPath>hola_dspic_main.c</itemPath>
+<itemPath>rtGetInf.c</itemPath>
+<itemPath>rtGetNaN.c</itemPath>
+<itemPath>rt_nonfinite.c</itemPath>
+
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+                   <itemPath>../hola_dspic.slx</itemPath>
+
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Simulink" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>dsPIC33FJ32MC202</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>Simulator</platformTool>
+        <languageToolchain>XC16</languageToolchain>
+        <languageToolchainVersion>1.34</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C30>
+        <property key="extra-include-directories" value=";hola_dspic.X;.;..;C:/Program Files/MATLAB/R2017a/simulink/include/sf_runtime;C:/Program Files/MATLAB/R2017a/rtw/c/ert;C:/Program Files/MATLAB/R2017a/extern/include;C:/Program Files/MATLAB/R2017a/simulink/include;C:/Program Files/MATLAB/R2017a/rtw/c/src;C:/Program Files/MATLAB/R2017a/rtw/c/src/ext_mode/common;C:/Program Files/MATLAB/R2017a/rtw/c/src/ext_mode/common"/>
+        <property key="optimization-level" value="3"/>
+      </C30>
+      <C30-AS>
+      </C30-AS>
+      <C30-LD>
+        <property key="extra-lib-directories" value=";hola_dspic.X;.;..;C:/Program Files/MATLAB/R2017a/simulink/include/sf_runtime;C:/Program Files/MATLAB/R2017a/rtw/c/ert;C:/Program Files/MATLAB/R2017a/extern/include;C:/Program Files/MATLAB/R2017a/simulink/include;C:/Program Files/MATLAB/R2017a/rtw/c/src;C:/Program Files/MATLAB/R2017a/rtw/c/src/ext_mode/common;C:/Program Files/MATLAB/R2017a/rtw/c/src/ext_mode/common"/>
+      </C30-LD>
+      <C30Global>
+      </C30Global>
+      <Simulator>
+      </Simulator>
+    </conf>
+  </confs>
+</configurationDescriptor>
