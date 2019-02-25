@@ -83,7 +83,7 @@ function Conectar_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 global s
 delete(instrfind);
-s = serial('COM6');% Change here accordingly..
+s = serial('COM5');% Change here accordingly..
 set(s,'BaudRate',115200);
 s.InputBufferSize = 2048;
 s.OutputBufferSize = 2048;
@@ -136,7 +136,7 @@ y = 0;
 Mensaje = 'Obteniendo datos ECG Raw';
 set(handles.Titulo,'String',Mensaje);
 while(y<1)
-    A = fread(s, 1000, 'uint8');
+    A = fread(s, 2000, 'uint8');
     Data = A;
     %display(A);
     drawnow;
@@ -310,7 +310,7 @@ y = 0;
 Mensaje = 'Obteniendo datos de Filtro 7';
 set(handles.Titulo,'String',Mensaje);
 while(y<1)
-    A = fread(s, 1000, 'uint8');
+    A = fread(s, 2000, 'uint8');
     Data = A;
     %display(A);
     drawnow;
