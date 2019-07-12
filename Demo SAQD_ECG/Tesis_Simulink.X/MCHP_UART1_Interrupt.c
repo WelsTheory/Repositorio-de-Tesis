@@ -6,8 +6,7 @@
 /* Declare UART1 Tx Circular Buffer Structure */
 MCHP_UART1_TxStr MCHP_UART1_Tx;
 MCHP_UART1_RxStr MCHP_UART1_Rx;
-void __attribute__((__interrupt__,__shadow__,__no_auto_psv__)) _U1TXInterrupt
-  (void)
+void __attribute__((__interrupt__,__no_auto_psv__)) _U1TXInterrupt(void)
 {
   register uint_T LocalHead;
   LocalHead = MCHP_UART1_Tx.head;      /* Head is a volatile variable. Use local variable to speed-up execution */

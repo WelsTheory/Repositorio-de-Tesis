@@ -34,7 +34,7 @@ MAKEFILE                = Tesis_Simulink.mk
 MATLAB_ROOT             = C:/Program Files/MATLAB/R2014a
 ALT_MATLAB_ROOT         = C:/PROGRA~1/MATLAB/R2014a
 MASTER_ANCHOR_DIR       = 
-START_DIR               = D:/Yo/Repositorio-de-Tesis
+START_DIR               = D:/Tesis/Repositorio-de-Tesis/Demo SAQD_ECG
 S_FUNCTIONS             = 
 S_FUNCTIONS_LIB         = 
 NUMST                   = 1
@@ -202,6 +202,10 @@ MATLAB_INCLUDES = \
 ADD_INCLUDES = \
 	-I"$(START_DIR)/Tesis_Simulink.X" \
 	-I"$(START_DIR)" \
+	-I"$(MATLAB_ROOT)/toolbox/dsp/include" \
+	-I"$(MATLAB_ROOT)/toolbox/dsp/extern/src/export/include/src" \
+	-I"$(MATLAB_ROOT)/toolbox/dsp/extern/src/export/include" \
+	-I"$(MATLAB_ROOT)/toolbox/shared/dsp/vision/matlab/include" \
 
 
 
@@ -284,6 +288,10 @@ endif
 #
 #ASM_OPTIM_SRCS += $(wildcard $(START_DIR)/Tesis_Simulink.X/*.s) 
 #ASM_OPTIM_SRCS += $(wildcard $(START_DIR)/*.s) 
+#ASM_OPTIM_SRCS += $(wildcard $(MATLAB_ROOT)/toolbox/dsp/include/*.s) 
+#ASM_OPTIM_SRCS += $(wildcard $(MATLAB_ROOT)/toolbox/dsp/extern/src/export/include/src/*.s) 
+#ASM_OPTIM_SRCS += $(wildcard $(MATLAB_ROOT)/toolbox/dsp/extern/src/export/include/*.s) 
+#ASM_OPTIM_SRCS += $(wildcard $(MATLAB_ROOT)/toolbox/shared/dsp/vision/matlab/include/*.s) 
 
 #ASM_OPTIM_SRCS = $(wildcard *.s)
 #    # for instrumented code

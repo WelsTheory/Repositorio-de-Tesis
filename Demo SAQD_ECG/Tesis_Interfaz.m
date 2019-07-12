@@ -83,12 +83,12 @@ function Conectar_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 global s
 delete(instrfind);
-s = serial('COM3');% Change here accordingly..
+s = serial('COM4');% Change here accordingly..
 set(s,'BaudRate',115200);
 s.InputBufferSize = 2048;
 s.OutputBufferSize = 2048;
 fopen(s);
-Mensaje = 'Sistema Conectado';
+Mensaje = 'Sistema Conectado - verifique el encendido del led';
 set(handles.Titulo,'String',Mensaje);
 fwrite(s,1);
 
@@ -119,7 +119,7 @@ y = 0;
 Mensaje = 'Obteniendo datos ECG Raw';
 set(handles.Titulo,'String',Mensaje);
 while(y<1)
-    A = fread(s, 2000, 'uint8');
+    A = fread(s, 1000, 'uint8');
     Data = A;
     %display(A);
     drawnow;
@@ -130,6 +130,8 @@ while(y<1)
     y = y + 1;
     ylim([0 500])
 end
+Mensaje = 'Datos ECG Raw';
+set(handles.Titulo,'String',Mensaje);
 
 % --- Executes on button press in Filtro1.
 function Filtro1_Callback(hObject, eventdata, handles)
@@ -143,7 +145,7 @@ y = 0;
 Mensaje = 'Obteniendo datos de Filtro 1';
 set(handles.Titulo,'String',Mensaje);
 while(y<1)
-    A = fread(s, 2000, 'uint8');
+    A = fread(s, 1000, 'uint8');
     Data = A;
     %display(A);
     drawnow;
@@ -154,6 +156,8 @@ while(y<1)
     y = y + 1;
     ylim([0 500])
 end
+Mensaje = 'Datos de Filtro 1';
+set(handles.Titulo,'String',Mensaje);
 
 
 % --- Executes on button press in Filtro2.
@@ -168,7 +172,7 @@ y = 0;
 Mensaje = 'Obteniendo datos de Filtro 2';
 set(handles.Titulo,'String',Mensaje);
 while(y<1)
-    A = fread(s, 2000, 'uint8');
+    A = fread(s, 1000, 'uint8');
     Data = A;
     %display(A);
     drawnow;
@@ -179,7 +183,8 @@ while(y<1)
     y = y + 1;
     ylim([0 500])
 end
-
+Mensaje = 'Datos de Filtro 2';
+set(handles.Titulo,'String',Mensaje);
 
 % --- Executes on button press in Filtro3.
 function Filtro3_Callback(hObject, eventdata, handles)
@@ -193,7 +198,7 @@ y = 0;
 Mensaje = 'Obteniendo datos de Filtro 3';
 set(handles.Titulo,'String',Mensaje);
 while(y<1)
-    A = fread(s, 2000, 'uint8');
+    A = fread(s, 1000, 'uint8');
     Data = A;
     %display(A);
     drawnow;
@@ -204,6 +209,8 @@ while(y<1)
     y = y + 1;
     ylim([0 500])
 end
+Mensaje = 'Datos de Filtro 3';
+set(handles.Titulo,'String',Mensaje);
 
 % --- Executes on button press in Filtro4.
 function Filtro4_Callback(hObject, eventdata, handles)
@@ -217,7 +224,7 @@ y = 0;
 Mensaje = 'Obteniendo datos de Filtro 4';
 set(handles.Titulo,'String',Mensaje);
 while(y<1)
-    A = fread(s, 2000, 'uint8');
+    A = fread(s, 1000, 'uint8');
     Data = A;
     %display(A);
     drawnow;
@@ -228,7 +235,7 @@ while(y<1)
     y = y + 1;
     ylim([0 500])
 end
-Mensaje = 'Data Filtrada';
+Mensaje = 'Datos de Filtro 4';
 set(handles.Titulo,'String',Mensaje);
 
 
@@ -244,7 +251,7 @@ y = 0;
 Mensaje = 'Obteniendo datos de Filtro 5';
 set(handles.Titulo,'String',Mensaje);
 while(y<1)
-    A = fread(s, 2000, 'uint8');
+    A = fread(s, 1000, 'uint8');
     Data = A;
     %display(A);
     drawnow;
@@ -255,6 +262,8 @@ while(y<1)
     y = y + 1;
     ylim([0 500])
 end
+Mensaje = 'Datos de Filtro 5';
+set(handles.Titulo,'String',Mensaje);
 
 
 % --- Executes on button press in Filtro6.
@@ -269,7 +278,7 @@ y = 0;
 Mensaje = 'Obteniendo datos de Filtro 6';
 set(handles.Titulo,'String',Mensaje);
 while(y<1)
-    A = fread(s, 2000, 'uint8');
+    A = fread(s, 1000, 'uint8');
     Data = A;
     %display(A);
     drawnow;
@@ -280,6 +289,8 @@ while(y<1)
     y = y + 1;
     ylim([0 500])
 end
+Mensaje = 'Datos de Filtro 6';
+set(handles.Titulo,'String',Mensaje);
 
 % --- Executes on button press in Filtro7.
 function Filtro7_Callback(hObject, eventdata, handles)
@@ -293,7 +304,7 @@ y = 0;
 Mensaje = 'Obteniendo datos de Filtro 7';
 set(handles.Titulo,'String',Mensaje);
 while(y<1)
-    A = fread(s, 2000, 'uint8');
+    A = fread(s, 1000, 'uint8');
     Data = A;
     %display(A);
     drawnow;
@@ -304,6 +315,8 @@ while(y<1)
     y = y + 1;
     ylim([0 500])
 end
+Mensaje = 'Datos de Filtro 7';
+set(handles.Titulo,'String',Mensaje);
 
 
 % --- Executes on button press in Guardar.

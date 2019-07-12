@@ -5,7 +5,7 @@
 # <install-dir> refers to Harmony installation-dir
 #
 # The following line should be added at the end your Harmony project root .hconfig file:
-# source "D:/Yo/Repositorio-de-Tesis/Tesis_Simulink.X/simulink.hconfig"
+# source "D:/Tesis/Repositorio-de-Tesis/Demo SAQD_ECG/Tesis_Simulink.X/simulink.hconfig"
 #
 menu "Simulink Configuration"
 comment "This project supports Simulink Integration."
